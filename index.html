@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+   <header>
+        <div class="header">
+            <img class="header__logo" src="imagen/Logo.svg" alt="">
+        </div>
+   </header>
+   <main>
+    <div class="main">
+        <div class="left">
+            <textarea id="ingresotexto" class="ingreso__texto" placeholder="Ingrese texto aqui"></textarea>
+                <div class="left__footer">
+                    <img src="imagen/alerta.svg" alt="">
+                    <span class="left__info">Solo letras minúsculas y sin acentos</span>
+                    <div class="left__botones">
+                        <button id="botonencriptar" class="boton__encriptar">Encriptar</button>
+                        <button id="botondesencriptar" class="boton__desencriptar">Desencriptar</button>
+                    </div>
+                </div>           
+        </div>
+        <div id="right" class="right">
+             <img id="munheco" class="munheco" src="imagen/Muñeco.svg" alt="">
+            <textarea id="mensajefinal" class="mensaje__final" placeholder="Ningún mensaje fue encontrado"></textarea>
+            <p id="rigtinfo" class="rigt__info">Ingresa el texto que desees encriptar o Desencriptar</p> 
+            <button id="botoncopiar" class="boton__copiar oculto">Copiar</button>
+        </div>
+    </div>            
+   </main>
+   <!--
+   <footer>
+
+   </footer> 
+   -->
+   <script src="js/script.js"></script>
+</body>
+</html>
